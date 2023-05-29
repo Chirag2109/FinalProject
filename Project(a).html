@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Sports.css">
+    <link rel="stylesheet" href="Project.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+        function SubForm ()
+        {
+            $.ajax
+            ({
+                url:'https://api.apispreadsheets.com/data/fifsFCiukltjW0Id/',
+                type:'post',
+                data:$("#myform").serializeArray(),
+                success: function()
+                {
+                    alert("Thank You!! Your details has been successfully submitted :)")
+                },
+                error: function()
+                {
+                    alert("There was an error :(")
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div style="display: grid; grid-template-columns: 1fr 9fr; background-color: #363636;">
+            <img src="sport-sports-png-transparent-images-30.png" style="height: 100px; width: 100px;">
+            <h1>Sports Academy</h1>
+        </div>
+    </header>
+    <div id="navbar">
+        <div style="display: grid; grid-column-start: 1; grid-column-end: 2;">
+            <div style="display: inline-flex; padding-left: 40px;">
+                <div><button onclick="window.open('Project.html', '_parent')" class="a">Home</button></div>
+                <div class="dropdown"><button class="a" onclick="window.open('sports.html', '_parent')">Sports Gallery</button></div>
+                <div class="dropdown"><button class="a">Contact Us</button>
+                    <div class="dropdown-content">
+                        <a href="mailto:shyamsunder@gmail.com" target="_blank" rel="noopener noreferrer"> 
+                            Dr. Shyam Sundar Rath <br>
+                            [Dean (Students' Welfare),
+                            Associate Professor,
+                            HOD]
+                        </a>
+                        <a href="mailto:ravikumar@gmail.com" target="_blank" rel="noopener noreferrer"> 
+                            Mr. Ravi K Shankar <br> 
+                            [Asst. Professor]
+                        </a>
+                        <a href="mailto:manjinder@gmail.com" target="_blank" rel="noopener noreferrer">
+                            Ms. Manjinder Jyoti <br>
+                            [Asst. Professor]
+                        </a>
+                        <a href="mailto:rakeshsunder@gmail.com" target="_blank" rel="noopener noreferrer">
+                            Mr. M. Rakeshsunder Singh <br>
+                            [Asst. Professor]
+                        </a>
+                        <a href="mailto:yendrembam@gmail.com" target="_blank" rel="noopener noreferrer">
+                            Mr. Yendrembam Biondi Meitei <br>
+                            [Asst. Professor]
+                        </a>
+                        <a href="mailto:praloykanti@gmail.com" target="_blank" rel="noopener noreferrer">
+                            Mr. PraloyKanti Sarkar <br>
+                            [Asst. Professor]
+                        </a>
+                        <a href="mailto:anshumanbal@gmail.com" target="_blank" rel="noopener noreferrer"> 
+                            Mr. Anshuman Bal <br>
+                            [Asst. Professor]
+                        </a>
+                    </div>
+                </div>
+                <div><button onclick="window.open('Project(a).html', '_parent')" class="a" style="margin-left: 20px;">Admission</button></div>
+                <div class="dropdown"><button class="a">Tournaments</button>
+                    <div class="dropdown-content">
+                        <a> Inter-academy tournament</a>
+                        <a> Intra-academy tournament</a>
+                        <a> District tournament</a>
+                        <a> State tournament</a>
+                        <a> National tournament</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: grid; grid-column-start: 2; grid-column-end: 3;">
+            <form action="/" method="GET" class="form">
+                <input type="search" placeholder="Search                            |" class="search-field" id="Search"/>
+                <button type="submit" class="search-button" onclick="find()">
+                  <img src="search.png">
+                </button>
+            </form>
+        </div>
+    </div><br><br><br><br><br>
+    <div class="maindiv">
+        <h1 class="heading">Sports Academy Registration Form</h1>
+        <hr>
+        <div class="innerdiv">
+            <h2 class="innerheading">Student's Information</h2>
+            <table class="table">
+                <tbody>
+                    <tr> 
+                        <td><input type="text" name="Username" id="f1" placeholder="Player Name"></td>
+                        <td><input type="date" name="DOB" id="f2" placeholder="Date Of Birth"></td>
+                    </tr>
+                    <tr> 
+                        <td><input type="tel" name="Cphone" id="f3" placeholder="Mobile Number"></td>
+                        <td><input type="tel" name="Hphone" id="f4" placeholder="Landline Number"></td>
+                    </tr>
+                    <tr> 
+                        <td><input type="text" name="add" id="f6" placeholder="Address"></td>
+                        <td><input type="email" name="Email-id" id="f7" placeholder="Email-id"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <label style="padding-left: 40px;">Interested in volunteering while your team not playing?</label><br>
+                <input type="checkbox" name="volunteering" id="f18" value="Y"><label>Yes</label><br>
+                <input type="checkbox" name="volunteering" id="f19" value="N"><label>No</label>
+            </div>
+            <br>
+        </div><br><br>
+        <div class="innerdiv" style="height: 370px;">
+            <h2 class="innerheading">Emergency Contact & Health Insurance Information</h2><br><br>
+            <table class="table">
+                <tbody>
+                    <tr><input type="text" name="Rname" id="f8" placeholder="Emergency Contact's Name"></tr><br><br>
+                    <tr><input type="text" name="Rel" id="f9" placeholder="Relationship with the person"></tr><br><br>
+                    <tr><input type="tel" name="Rphone" id="f0" placeholder="Phone number of the person"></tr><br><br>
+                    <tr><input type="text" name="insurance" id="f11" placeholder="Do you have Health Insurance ?"></tr><br><br>
+                    <tr><input type="text" name="Immunity" id="f12" placeholder="Do you have any allergies,chronic illness or Please describe medical condition that would limit high level activity?" style="width: 800px;"></tr><br><br>
+                </tbody>
+            </table>
+        </div><br><br>
+        <div class="innerdiv">
+            <h2 class="innerheading">Parental Permission for Emergency Treatment</h2><br>
+            <table class="table">
+                <tbody>
+                    <tr> 
+                        <td><input type="text" name="Physician" id="f13" placeholder="Name of Physician/Emergency medical Care Facility"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="tel" name="Pphone" id="f14" placeholder="Phone Number"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div><br><br>
+        <div class="innerdiv">
+            <h2 class="innerheading"> Release of Liability</h2><br><br> 
+            <p>
+                A release of Liability Although the safety of all sports activities is the primary concern, Indoor
+                sports activities at Youth Sports Center's facilities may cause injuries and/or death. I expressly assume the risk of 
+                injury,death,and/or illness arising from any cause,and agree to waive the right to pursue any claim
+                against the Youth Sports Center and the persons in charge.
+            </p><br>
+            <p><input type="checkbox" name="Terms" id="f15"><label> I have read and agree to the above conditions</label></p>
+            <p><input type="checkbox" name="permission" id="f17"><label> I would like to play on the same team with following players. League organizers will form teams base on this buddy list and your skill level</label></p><br>
+            <p><label>Signature: </label><input type="file"></p><br><br><br>
+            <center>
+                <button type="button" style="font-size: larger; border-radius: 10px; background-color: black; color: white; margin-left: 20px; height: 40px; width: 80px;" onclick="SubForm()">Submit</button>
+                <button type="reset" style="font-size: larger; border-radius: 10px; background-color: black; color: white; margin-left: 20px; height: 40px; width: 80px;">Cancel</button>
+            </center><br><br>
+        </div>      
+    </div>
+</body>
+<script src="Project.js"></script>
+</html>

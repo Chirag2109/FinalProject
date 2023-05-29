@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sports Gallery</title>
+  <link rel="stylesheet" href="Project.css">
+</head>
+<body>
+  <header>
+    <div style="display: grid; grid-template-columns: 1fr 9fr; background-color: #363636;">
+        <img src="sport-sports-png-transparent-images-30.png" style="height: 100px; width: 100px;">
+        <h1>Sports Academy</h1>
+    </div>
+</header>
+<div id="navbar">
+    <div style="display: grid; grid-column-start: 1; grid-column-end: 2;">
+        <div style="display: inline-flex; padding-left: 40px;">
+            <div><button onclick="window.open('Project.html', '_parent')" class="a">Home</button></div>
+            <div class="dropdown"><button class="a" onclick="window.open('sports.html', '_parent')">Sports Gallery</button></div>
+            <div class="dropdown"><button class="a">Contact Us</button>
+                <div class="dropdown-content">
+                    <a href="mailto:shyamsunder@gmail.com" target="_blank" rel="noopener noreferrer"> 
+                        Dr. Shyam Sundar Rath <br>
+                        [Dean (Students' Welfare),
+                        Associate Professor,
+                        HOD]
+                    </a>
+                    <a href="mailto:ravikumar@gmail.com" target="_blank" rel="noopener noreferrer"> 
+                        Mr. Ravi K Shankar <br> 
+                        [Asst. Professor]
+                    </a>
+                    <a href="mailto:manjinder@gmail.com" target="_blank" rel="noopener noreferrer">
+                        Ms. Manjinder Jyoti <br>
+                        [Asst. Professor]
+                    </a>
+                    <a href="mailto:rakeshsunder@gmail.com" target="_blank" rel="noopener noreferrer">
+                        Mr. M. Rakeshsunder Singh <br>
+                        [Asst. Professor]
+                    </a>
+                    <a href="mailto:yendrembam@gmail.com" target="_blank" rel="noopener noreferrer">
+                        Mr. Yendrembam Biondi Meitei <br>
+                        [Asst. Professor]
+                    </a>
+                    <a href="mailto:praloykanti@gmail.com" target="_blank" rel="noopener noreferrer">
+                        Mr. PraloyKanti Sarkar <br>
+                        [Asst. Professor]
+                    </a>
+                    <a href="mailto:anshumanbal@gmail.com" target="_blank" rel="noopener noreferrer"> 
+                        Mr. Anshuman Bal <br>
+                        [Asst. Professor]
+                    </a>
+                </div>
+            </div>
+            <div><button onclick="window.open('Project(a).html', '_parent')" class="a" style="margin-left: 20px;">Admission</button></div>
+            <div class="dropdown"><button class="a">Tournaments</button>
+                <div class="dropdown-content">
+                    <a> Inter-academy tournament</a>
+                    <a> Intra-academy tournament</a>
+                    <a> District tournament</a>
+                    <a> State tournament</a>
+                    <a> National tournament</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: grid; grid-column-start: 2; grid-column-end: 3;">
+        <form action="/" method="GET" class="form">
+            <input type="search" placeholder="Search                            |" class="search-field" id="Search"/>
+            <button type="submit" class="search-button" onclick="find()">
+              <img src="search.png">
+            </button>
+        </form>
+    </div>
+</div><br><br><br><br><br>
+  <div class="wrapper">
+    <div class="container">
+      <div class="gallery">
+        <figure class="card" id="card1">
+          <img src="Basketball.jpeg" alt="" />
+          <figcaption>
+            <a href="https://www.sportingnews.com/in/nba?gr=www" target="_blank">basktetball</a>
+          </figcaption>
+        </figure>
+        <figure class="card" id="card2">
+          <img src="athlete.jpeg" alt="" />
+          <figcaption>
+            <a href="https://indianathletics.in/" target="_blank">Athletics</a>
+          </figcaption>
+        </figure>
+        <figure class="card" id="card3">
+          <img src="foot.jpeg" alt="" />
+          <figcaption>
+            <a href="https://www.fifa.com/" target="_blank">Football</a>
+          </figcaption>
+        </figure>
+        <figure class="card" id="card4">
+          <img src="Tennis.jpg" alt="" />
+          <figcaption>
+            <a href="https://www.tennis.com/" target="_blank">Tennis</a>
+          </figcaption>
+        </figure>
+        <figure class="card" id="card5">
+          <img src="skating.jpeg" alt="" />
+          <figcaption>
+            <a href="https://indiaskate.com/" target="_blank">Skating</a>
+          </figcaption>
+        </figure>
+        <figure class="card" id="card6">
+          <img src="Badminton.jpeg" alt="" />
+          <figcaption>
+            <a href="https://bwfbadminton.com/" target="_blank">Badminton</a>
+          </figcaption>
+        </figure>
+        <figure class="card" id="card7">
+          <img src="Swimming.jpg" alt="" />
+          <figcaption>
+            <a href="https://www.worldaquatics.com/" target="_blank">Swimming</a>
+          </figcaption>
+        </figure>
+        <figure class="card" id="card8">
+          <img src="hockey.jpeg" alt="" />
+          <figcaption>
+            <a href="https://www.hockeyindia.org/" target="_blank">Hockey</a>
+          </figcaption>
+        </figure>
+        <figure class="card" id="card9">
+          <img src="Cricket.jpeg" alt="" />
+          <figcaption>
+            <a href="https://www.icc-cricket.com/homepage" target="_blank">Cricket</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="Project.js"></script>
+</html>

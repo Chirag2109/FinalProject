@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Project.css">
+    <link rel="stylesheet" href="all.css">
+</head>
+<body onmouseleave="document.getElementById('actual-popup').style.display='grid'">
+    <header>
+        <div style="display: grid; grid-template-columns: 1fr 9fr; background-color: #363636;">
+            <img src="sport-sports-png-transparent-images-30.png" style="height: 100px; width: 100px;">
+            <h1>Sports Academy</h1>
+        </div>
+    </header>
+    <div id="navbar">
+        <div style="display: grid; grid-column-start: 1; grid-column-end: 2;">
+            <div style="display: inline-flex; padding-left: 40px;">
+                <div><button onclick="window.open('Project.html', '_parent')" class="a">Home</button></div>
+                <div class="dropdown"><button class="a" onclick="window.open('sports.html', '_parent')">Sports Gallery</button></div>
+                <div class="dropdown"><button class="a">Contact Us</button>
+                    <div class="dropdown-content">
+                        <a href="mailto:shyamsunder@gmail.com" target="_blank" rel="noopener noreferrer"> 
+                            Dr. Shyam Sundar Rath <br>
+                            [Dean (Students' Welfare),
+                            Associate Professor,
+                            HOD]
+                        </a>
+                        <a href="mailto:ravikumar@gmail.com" target="_blank" rel="noopener noreferrer"> 
+                            Mr. Ravi K Shankar <br> 
+                            [Asst. Professor]
+                        </a>
+                        <a href="mailto:manjinder@gmail.com" target="_blank" rel="noopener noreferrer">
+                            Ms. Manjinder Jyoti <br>
+                            [Asst. Professor]
+                        </a>
+                        <a href="mailto:rakeshsunder@gmail.com" target="_blank" rel="noopener noreferrer">
+                            Mr. M. Rakeshsunder Singh <br>
+                            [Asst. Professor]
+                        </a>
+                        <a href="mailto:yendrembam@gmail.com" target="_blank" rel="noopener noreferrer">
+                            Mr. Yendrembam Biondi Meitei <br>
+                            [Asst. Professor]
+                        </a>
+                        <a href="mailto:praloykanti@gmail.com" target="_blank" rel="noopener noreferrer">
+                            Mr. PraloyKanti Sarkar <br>
+                            [Asst. Professor]
+                        </a>
+                        <a href="mailto:anshumanbal@gmail.com" target="_blank" rel="noopener noreferrer"> 
+                            Mr. Anshuman Bal <br>
+                            [Asst. Professor]
+                        </a>
+                    </div>
+                </div>
+                <div><button onclick="window.open('Project(a).html', '_parent')" class="a" style="margin-left: 20px;">Admission</button></div>
+                <div class="dropdown"><button class="a">Tournaments</button>
+                    <div class="dropdown-content">
+                        <a> Inter-academy tournament</a>
+                        <a> Intra-academy tournament</a>
+                        <a> District tournament</a>
+                        <a> State tournament</a>
+                        <a> National tournament</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: grid; grid-column-start: 2; grid-column-end: 3;">
+            <form action="/" method="GET" class="form">
+                <input type="search" placeholder="Search                            |" class="search-field" id="Search"/>
+                <button type="submit" class="search-button" onclick="find()">
+                  <img src="search.png">
+                </button>
+            </form>
+        </div>
+    </div><br><br><br>
+    <div style="text-align: center; font-size: xx-large; margin-top: 50px;">
+        <h2 style="background-color: orange;">WELCOME</h2><br>
+        <h3 style="background-image: url(ashok-chakra.png); background-repeat: no-repeat; background-position: center; font-size: 100px;">The Sports Academy</h3><br>
+        <h4 style="background-color: green;">A Platform to Pursue Your Sporting & Academic Dreams</h4>
+    </div><br><br>
+
+    <div style="text-align: center; border: 2px solid black; font-size: xx-large; font-weight: 1000;">ALUMNI</div><br><br>
+    <div style="height: 300px; display: flex; justify-content: center; align-items: center;">
+    <marquee behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4140/4140061.png" class="i">
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2374/2374851.png"><br>
+                    <marquee behaviour="scroll" direction="up" style="text-align: center; font-size: x-large;" onmouseover="this.stop()" onmouseout="this.start()">
+                        Nikhil Pingle is an Indian figure skater. <br>
+                        He started skating at the age of 7.He <br>
+                        started with recreational skating and <br>
+                        transitioned into competitive speed <br>
+                        skating for a duration of 4 years. <br>
+                        His experiences with speed skating <br>
+                        made leeway for artistic roller skating. <br>
+                        It led him to pursue figure skating where <br>
+                        he has competed in a number of tournaments <br>
+                        including the 2017 Asian Winter Games in <br>
+                        Sapporo, Japan. <br>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4140/4140040.png" class="i">
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2374/2374861.png"><br>
+                    <marquee behaviour="scroll" direction="up" style="text-align: center; font-size: x-large;" onmouseover="this.stop()" onmouseout="this.start()">
+                        At the World Championship held in Jakarta,<br>
+                        Nehwal was seeded 2nd. She defeated Cheung <br>
+                        Ngan Yi and Sayaka Takahashi in early rounds <br>
+                        and reached the quarterfinals where she faced <br>
+                        Chinese Wang Yihan. She was able to beat her <br>
+                        in 3 games 21-15, 19-21, 21-19; thus assured <br>
+                        herself of first ever medal at the World <br>
+                        Championships. She beat home hope Lindaweni <br>
+                        Fanetri in the semifinal and created history <br>
+                        by becoming first ever player from India to <br>
+                        contest World badminton championship finals. <br>
+                        She settled for the silver after going down <br>
+                        to Carolina Marín in final. <br>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1369/1369288.png" class="i">
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2374/2374864.png"><br>
+                    <marquee behaviour="scroll" direction="up" style="text-align: center; font-size: x-large;" onmouseover="this.stop()" onmouseout="this.start()">
+                        Our hockey team made history after reaching their first-ever <br>
+                        Olympic Semi-Final on Monday courtesy of defeating world no.2 <br>
+                        Australia 1-0 in the Quarter-Final match at the Oi Hockey <br>
+                        Stadium in the ongoing Tokyo 2020 Olympics. <br>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2257/2257060.png" class="i">
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3179/3179858.png"><br>
+                    <marquee behaviour="scroll" direction="up" style="text-align: center; font-size: x-large;" onmouseover="this.stop()" onmouseout="this.start()">
+                        Our team won the restarted Nehru Cup in 2007 and 2009 and <br>
+                        emerged victorious during the 2008 AFC Challenge Cup. The <br>
+                        Challenge Cup victory allowed India to once again qualify <br>
+                        for the Asian Cup after 27 years. <br>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1859/1859221.png" class="i">
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1228/1228259.png"><br>
+                    <marquee behaviour="scroll" direction="up" style="text-align: center; font-size: x-large;" onmouseover="this.stop()" onmouseout="this.start()">
+                        Virdhawal Vikram Khade won a bronze medal <br>
+                        in the 50 meters butterfly event at the <br>
+                        2010 Asian Games in Guangzhou; it was <br>
+                        India's first Asian Games medal in swimming <br> 
+                        in 24 years. He was conferred with the Arjuna <br>
+                        Award in 2011 by the Government of India. <br>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://cdn-icons-png.flaticon.com/128/6534/6534581.png" class="i">
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://cdn-icons-png.flaticon.com/128/9559/9559174.png"><br>
+                    <marquee behaviour="scroll" direction="up" style="text-align: center; font-size: x-large;" onmouseover="this.stop()" onmouseout="this.start()">
+                        Jyoti Gawate claimed the top honour in the <br>
+                        women's full marathon. Her 3:01.20 was, however, <br>
+                        below the AFI entry standard for the two multi-sport <br>
+                        events later this year. <br>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1114/1114234.png" class="i">
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://cdn-icons-png.flaticon.com/128/250/250639.png" style="width: 100px;"><img src="https://cdn-icons-png.flaticon.com/128/250/250638.png" style="width: 100px;"><img src="https://cdn-icons-png.flaticon.com/128/250/250639.png" style="width: 100px;"><br>
+                    <marquee behaviour="scroll" direction="up" style="text-align: center; font-size: x-large;" onmouseover="this.stop()" onmouseout="this.start()">
+                        Shuttler P. V. Sindhu won a silver medal in Women's <br>
+                        singles badminton, becoming the first Indian woman to <br>
+                        win an Olympic silver medal and also the youngest Indian <br>
+                        Olympic medalist. At the 2020 Summer Olympics (held in 2021), <br>
+                        India was represented by a new record number of 124 athletes. <br>
+                        Saikhom Mirabai Chanu secured a silver in the weightlifting <br>
+                        women's category of 49 kg on the opening day, the first time <br>
+                        India won a medal on the opening day of any Olympics. A few <br>
+                        days later, P. V. Sindhu defeated China's He Bingjiao in the <br>
+                        Women's singles badminton bronze-medal match in straight games, <br>
+                        thus becoming the first Indian woman to win two individual <br>
+                        Olympic medals. Neeraj Chopra won the gold in Javelin Throw, <br>
+                        becoming the first Indian to win a gold medal in track. <br>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </marquee>
+    </div>
+
+    <div class="con">
+        <dl>
+            <dt style="font-size: 90px; text-align: center;"><strong><u>Announcements: </u></strong></dt><br><br>
+            <marquee behavior="scroll" scrolldelay="0" scrollamount="10" direction="up" onmouseout="this.start()" onmouseover="this.stop()">
+                <dd style="font-size: 45px;">
+                    > January 13-29	                Men's Hockey World Cup                    Bhubaneswar and Rourkela, India <br><br>
+                    > January 16-29	                Australian Open	Tennis	                  Melbourne, Australia <br><br>
+                    > January 31-February 11	    Khelo India Youth Games	Multi-sports	  Madhya Pradesh, India <br><br>
+                    > March 15-31	                Women's World Boxing Championships        New Delhi, India <br><br>
+                    > March 14-19	                All England Badminton Championships       Birmingham, UK <br><br>
+                    > March 28-April 2	            Asian Wrestling Championships	          Delhi, India <br><br>
+                    > May 1-14	                    Men's World Boxing Championships	   	  Tashkent, Uzbekistan <br><br>
+                    > May 3-13	                    Asian Weightlifting Championships	      Jinju, South Korea <br><br>
+                    > May 5	                        Doha Diamond League	Athletics	          Qatar <br><br>
+                    > May 22-28	                    World Table Tennis Championships	      Durban, South Africa <br><br>
+                    > May 28 - June 11	            Tennis French Open	                      Paris, France <br><br>
+                    > July 3-13	                    Tennis Wimbledon Championships	          UK <br><br>
+                    > July 20 - August 20	        Women's FIFA World Cup	                  Australia/New Zealand <br><br>
+                    > July 14-30	                World Aquatics Championships	          Fukuoka, Japan <br><br>
+                    > August 19-27	                World Athletics Championships	          Budapest, Hungary <br><br>
+                    > August 21-27	                World Badminton Championships	          Copenhagen, Denmark <br><br>
+                    > August 28 - September 10	    Tennis US Open	                          New York, USA <br><br>
+                    > September 2-17	            World Weightlifting Championships	      Riyadh, Saudi Arabia <br><br>
+                    > September 3-10          	    World Rowing Championships                Belgrade, Serbia <br><br>
+                    > September 16-24	            World Wrestling Championships             Belgrade, Serbia <br><br>
+                    > September 23 - October 8	    Asian Games	Multi-sports                  Hangzhou, China <br><br>
+                    > December 13-17	            World Tour Finals	                      TBD <br><br>
+                    > TBD	AFC Asian Cup	        Football	                              Qatar <br><br>
+                </dd>
+            </marquee>
+        </dl>
+    </div><br>
+
+    <footer style="background-color: black;">
+        <div style="display: grid; grid-template-columns: 1fr 9fr; color: white;">
+            <div style="display: grid; grid-column-start: 1; grid-column-end: 2;"><img src="sport-sports-png-transparent-images-30.png" style="height: 100px; width: 100px;"></div>
+            <div style="display: grid; grid-column-start: 2; grid-column-end: 3;">
+                <div style="display: grid; grid-template-columns: 60vw 30vw; font-size: 50px; height: 100px; width: 100%; padding-right: 2px; margin-top: 10px;">
+                    <p style="grid-column-start: 1; grid-column-end: 2; color: white;">Feedback: </p>
+                    <div class="row social" style="grid-column-start: 2; grid-column-end: 3; text-align: right;">
+                        <a target = "blank" href='https://www.youtube.com/@lukessportsacademy'><i class="fab fa-youtube"></i></a>
+                        <a target = "blank" href='https://twitter.com'><i class="fab fa-twitter"></i></a>
+                        <a target = "blank" href='https://www.instagram.com/lukessportsacademy/'><i class='fab fa-instagram'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="Project.js"></script>
+</html>
+
+<!--Exit Plugin-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Project.css">
+</head>
+<script src="Project.js"></script>
+<body>
+    <div class="container-actual" id="actual-popup">
+        <div class="wait">
+            <h1 class="upper">Wait, On Account of...</h1>
+            <button type="reset" id="cancel" onclick="document.getElementById('actual-popup').style.display='none'">X</button>
+        </div>
+        <div class="actual">
+            <h1 class="words">You can regiter for your free trial week!!</h1>
+        </div>
+    </div>
+</body>
+</html>
